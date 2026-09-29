@@ -1,308 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>What to Eat Tonight? | Random Dinner & Food Decider Wheel</title>
-    <meta name="description" content="Can't decide what to eat? Spin the food wheel for quick takeout, homemade dinner, or healthy meal suggestions.">
-    <link rel="canonical" href="https://us-random-meal-decider.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="What to Eat Tonight? | Random Dinner & Food Decider Wheel">
-    <meta property="og:description" content="Can't decide what to eat? Spin the food wheel for quick takeout, homemade dinner, or healthy meal suggestions.">
-    <meta property="og:url" content="https://us-random-meal-decider.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Random Meal & Dinner Decider">
-    <meta property="og:image" content="https://us-random-meal-decider.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="What to Eat Tonight? | Random Dinner & Food Decider Wheel">
-    <meta name="twitter:description" content="Can't decide what to eat? Spin the food wheel for quick takeout, homemade dinner, or healthy meal suggestions.">
-    <meta name="twitter:image" content="https://us-random-meal-decider.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel</title>
+<meta name="description" content="Can't decide what to eat? Get a fair random dinner idea to cook or order, filtered by cuisine, time and vegetarian, with your own list and no repeats.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-random-meal-decider.enjoy-onepage.com/">
+<meta name="theme-color" content="#c2410c">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Random Dinner Decider">
+<meta property="og:title" content="What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel">
+<meta property="og:description" content="Can't decide what to eat? Get a fair random dinner idea to cook or order, filtered by cuisine, time and vegetarian, with your own list and no repeats.">
+<meta property="og:url" content="https://us-random-meal-decider.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-random-meal-decider.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel">
+<meta name="twitter:description" content="Can't decide what to eat? Get a fair random dinner idea to cook or order, filtered by cuisine, time and vegetarian, with your own list and no repeats.">
+<meta name="twitter:image" content="https://us-random-meal-decider.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Random Dinner Decider RSS" href="https://us-random-meal-decider.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-random-meal-decider.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Random Meal & Dinner Decider",
+      "@id": "https://us-random-meal-decider.enjoy-onepage.com/#webapp",
+      "name": "Random Dinner Decider",
       "url": "https://us-random-meal-decider.enjoy-onepage.com/",
-      "description": "Can't decide what to eat? Spin the food wheel for quick takeout, homemade dinner, or healthy meal suggestions.",
       "applicationCategory": "LifestyleApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
+      "inLanguage": "en",
+      "description": "A free random dinner picker. Choose cook at home or order in, cuisines, quick meals or vegetarian, add your own favorite places and dishes, and get a fair random pick that skips what you had recently.",
+      "image": "https://us-random-meal-decider.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-random-meal-decider.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is the pick really random?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every idea that matches your filters has the same chance. The pick uses your browser’s cryptographic random number generator with a method that avoids bias, and the spinning animation only shows the result; it does not change it." } },
+        { "@type": "Question", "name": "Can I add my own restaurants or dishes?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add them under My list and choose whether each one is cooked at home or ordered in. Select only the My list filter to pick from your own options, or leave all filters off to mix them with the built-in ideas." } },
+        { "@type": "Question", "name": "How does it avoid repeats?",
+          "acceptedAnswer": { "@type": "Answer", "text": "When you press Sounds good, the meal is saved to your recent dinners, and your last five dinners are skipped. Spin again never lands on the same idea twice in a row. Never suggest hides an idea until you bring it back. If every match was eaten recently, repeats are allowed so you still get a pick." } },
+        { "@type": "Question", "name": "What counts as quick or vegetarian?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Quick means home-cooked ideas that usually take about 30 minutes or less. Vegetarian means dishes without meat or fish, and for ordering in, kinds of places where vegetarian choices are usually on the menu. Always check ingredients and menus yourself, especially for allergies." } },
+        { "@type": "Question", "name": "Is my list saved?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, in this browser only. Your own ideas, hidden ideas and recent dinners stay on this device and are never sent to us. Use the remove buttons or Clear recent dinners to delete them." } }
+      ]
+    }
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#fdf7f3;--card:#fff;--ink:#2b1a12;--muted:#6e5b50;--accent:#c2410c;--line:#f0e1d8;--g:#15803d;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#9a3412,#ea580c);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.1rem;margin:0 0 10px}
+.card h3{font-size:1rem;margin:14px 0 6px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+input[type=text],select{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.seg{display:flex;gap:6px}
+.seg label{flex:1;text-align:center;border:1px solid var(--line);border-radius:10px;padding:8px 6px;cursor:pointer;font-weight:600;background:#fff}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label:has(input:checked){background:var(--accent);border-color:var(--accent);color:#fff}
+.seg label:has(input:focus-visible){outline:2px solid var(--ink);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:.9rem;cursor:pointer;background:#fff}
+.chips input{margin:0;accent-color:var(--accent)}
+.chk{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:.95rem}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.big{font-size:1.2rem;font-weight:800;padding:13px 20px;width:100%}
+.btn.sm{padding:4px 9px;font-size:.85rem;border-radius:8px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.inline{display:flex;gap:8px}
+.inline input{flex:1 1 auto;min-width:0}
+.err{color:var(--r);font-weight:600;margin:10px 0 0}
+.pick{border:2px dashed var(--line);border-radius:16px;padding:18px;text-align:center;margin:6px 0 10px;min-height:128px;display:flex;flex-direction:column;justify-content:center}
+.pick .emo{font-size:2.6rem;line-height:1.1}
+.pick .nm{font-size:1.5rem;font-weight:800;margin-top:4px;word-break:break-word}
+.pick .meta{color:var(--muted);font-size:.92rem}
+.pick.spinning .nm{opacity:.55}
+.count{font-weight:700}
+.list{list-style:none;margin:6px 0;padding:0;columns:2;column-gap:14px;font-size:.9rem}
+.list li{break-inside:avoid;padding:2px 0;overflow-wrap:anywhere}
+.mine{list-style:none;margin:6px 0;padding:0}
+.mine li{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid var(--line);padding:6px 0}
+.hist{list-style:none;margin:6px 0;padding:0;font-size:.92rem}
+.hist li{border-top:1px solid var(--line);padding:5px 0;display:flex;justify-content:space-between;gap:10px}
+.mine li span,.hist li span{min-width:0;overflow-wrap:anywhere}
+.hist li span+span{flex:none}
+details summary{cursor:pointer;font-weight:600}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#4a362b}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2b1a12;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>What to Eat Tonight?</h1>
+  <div class="header-sub">A fair random dinner decider · cook or order in · free, private, no sign-up</div>
+</header>
+
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
+
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="filters" aria-labelledby="in-h">
+      <h2 id="in-h">1. Tonight I want to…</h2>
+      <div class="seg" role="radiogroup" aria-label="Cook or order">
+        <label><input type="radio" name="how" value="any" checked> Either</label>
+        <label><input type="radio" name="how" value="home"> 🍳 Cook</label>
+        <label><input type="radio" name="how" value="out"> 🛵 Order in</label>
+      </div>
+      <span class="lbl" id="cu-l">Cuisine <span class="hint">none selected = all</span></span>
+      <div class="chips" role="group" aria-labelledby="cu-l">
+        <label><input type="checkbox" name="cu" value="american"> American</label>
+        <label><input type="checkbox" name="cu" value="mexican"> Mexican</label>
+        <label><input type="checkbox" name="cu" value="italian"> Italian</label>
+        <label><input type="checkbox" name="cu" value="asian"> Asian</label>
+        <label><input type="checkbox" name="cu" value="indian"> Indian</label>
+        <label><input type="checkbox" name="cu" value="med"> Mediterranean</label>
+        <label><input type="checkbox" name="cu" value="mine"> ⭐ My list</label>
+      </div>
+      <label class="chk"><input type="checkbox" id="quick"> Quick to cook (about 30 minutes or less)</label>
+      <label class="chk"><input type="checkbox" id="veg"> Vegetarian</label>
+      <p class="hint" id="count" aria-live="polite"></p>
+      <details><summary>See the ideas that match</summary><ul class="list" id="pool"></ul></details>
+
+      <h3>⭐ My list</h3>
+      <div class="inline"><input id="mine-name" type="text" maxlength="40" autocomplete="off" placeholder="e.g. Tony’s Pizza, Mom’s chili">
+        <select id="mine-how" aria-label="Cook or order" style="width:auto"><option value="out">Order in</option><option value="home">Cook</option></select></div>
+      <label class="chk"><input type="checkbox" id="mine-veg"> Vegetarian</label>
+      <div class="actions" style="margin-top:4px"><button type="button" class="btn" id="btn-mine">➕ Add to my list</button></div>
+      <p class="err" id="err" role="alert" hidden></p>
+      <ul class="mine" id="mine-list"></ul>
+      <p class="hint" id="hidden-note" hidden></p>
+    </section>
+
+    <section class="card result" aria-labelledby="out-h">
+      <h2 id="out-h">2. Your dinner</h2>
+      <div class="pick" id="pick" aria-live="polite"><div class="emo" id="p-emo">🍽️</div><div class="nm" id="p-name">Press Pick dinner</div><div class="meta" id="p-meta">Every matching idea has the same chance.</div></div>
+      <button type="button" class="btn primary big" id="btn-spin">🎲 Pick dinner</button>
+      <p class="hint" id="p-note"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="btn-yes" disabled>✓ Sounds good</button>
+        <button type="button" class="btn" id="btn-never" disabled>🚫 Never suggest</button>
+        <button type="button" class="btn" id="btn-copy" disabled>📋 Copy</button>
+        <button type="button" class="btn" id="btn-share" disabled>📤 Share</button>
+      </div>
+      <h3>Recent dinners</h3>
+      <ul class="hist" id="hist"></ul>
+      <p class="hint" id="hist-empty">None yet. Press Sounds good when you pick one.</p>
+      <div class="actions"><button type="button" class="btn sm" id="btn-clear" disabled>Clear recent dinners</button></div>
+    </section>
+  </div>
+
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
+
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How the pick works</h2>
+    <ul>
+      <li><strong>The pool:</strong> 45 common dinner ideas plus your own list, narrowed by your filters. The number of matches is shown above, and you can open the list to see every one.</li>
+      <li><strong>Fair:</strong> the pick uses your browser’s cryptographic random number generator with rejection sampling, so every idea in the pool has exactly the same chance. The spin animation only reveals the result.</li>
+      <li><strong>No repeats:</strong> your last five dinners marked Sounds good are skipped, the idea you just saw is skipped when you spin again, and hidden ideas are never picked. If that would leave nothing, recent dinners are allowed again.</li>
+      <li><strong>Quick and vegetarian:</strong> quick applies to home cooking only and means dishes that usually take about 30 minutes or less. Vegetarian means no meat or fish; for ordering in, it means places where vegetarian choices are usually on the menu.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>Is the pick really random?</h3><p>Yes. Every idea that matches your filters has the same chance. The pick uses your browser’s cryptographic random number generator with a method that avoids bias, and the spinning animation only shows the result; it does not change it.</p></div>
+    <div class="faq-item"><h3>Can I add my own restaurants or dishes?</h3><p>Yes. Add them under My list and choose whether each one is cooked at home or ordered in. Select only the My list filter to pick from your own options, or leave all filters off to mix them with the built-in ideas.</p></div>
+    <div class="faq-item"><h3>How does it avoid repeats?</h3><p>When you press Sounds good, the meal is saved to your recent dinners, and your last five dinners are skipped. Spin again never lands on the same idea twice in a row. Never suggest hides an idea until you bring it back. If every match was eaten recently, repeats are allowed so you still get a pick.</p></div>
+    <div class="faq-item"><h3>What counts as quick or vegetarian?</h3><p>Quick means home-cooked ideas that usually take about 30 minutes or less. Vegetarian means dishes without meat or fish, and for ordering in, kinds of places where vegetarian choices are usually on the menu. Always check ingredients and menus yourself, especially for allergies.</p></div>
+    <div class="faq-item"><h3>Is my list saved?</h3><p>Yes, in this browser only. Your own ideas, hidden ideas and recent dinners stay on this device and are never sent to us. Use the remove buttons or Clear recent dinners to delete them.</p></div>
+  </section>
+
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>These are general dinner ideas, not nutrition or dietary advice. Labels like vegetarian are general descriptions, so always check ingredients and restaurant menus yourself, especially if you have a food allergy.</p>
+  </section>
+</main>
+
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
+
+<footer class="footer">
+  <p>A free random dinner decider. Your list stays in this browser and is never sent to us.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-random-meal-decider.enjoy-onepage.com';
+  var TOOL_NAME = 'Random Dinner Decider';
+  var MINE = 'dinner.mine.v1', HIDE = 'dinner.hidden.v1', HIST = 'dinner.recent.v1', RECENT_SKIP = 5;
+  var CU = { american: 'American', mexican: 'Mexican', italian: 'Italian', asian: 'Asian', indian: 'Indian', med: 'Mediterranean', mine: 'My list' };
+  /* [id, name, emoji, how (home|out), quick (home only), vegetarian, cuisine] */
+  var IDEAS = [
+    ['tacos', 'Tacos', '🌮', 'home', 1, 0, 'mexican'], ['veg-tacos', 'Black bean tacos', '🌮', 'home', 1, 1, 'mexican'],
+    ['quesadillas', 'Cheese quesadillas', '🧀', 'home', 1, 1, 'mexican'], ['burrito-bowls', 'Chicken burrito bowls', '🥙', 'home', 1, 0, 'mexican'],
+    ['enchiladas', 'Chicken enchiladas', '🫔', 'home', 0, 0, 'mexican'], ['marinara', 'Spaghetti marinara', '🍝', 'home', 1, 1, 'italian'],
+    ['meatballs', 'Spaghetti and meatballs', '🍝', 'home', 0, 0, 'italian'], ['lasagna', 'Lasagna', '🍝', 'home', 0, 0, 'italian'],
+    ['pizza-home', 'Homemade margherita pizza', '🍕', 'home', 0, 1, 'italian'], ['scampi', 'Shrimp scampi', '🍤', 'home', 1, 0, 'italian'],
+    ['stir-fry', 'Chicken stir-fry', '🥡', 'home', 1, 0, 'asian'], ['fried-rice', 'Vegetable fried rice', '🍚', 'home', 1, 1, 'asian'],
+    ['teriyaki', 'Teriyaki salmon', '🐟', 'home', 1, 0, 'asian'], ['pad-thai', 'Shrimp pad Thai', '🍜', 'home', 1, 0, 'asian'],
+    ['curry', 'Chickpea curry', '🍛', 'home', 1, 1, 'indian'], ['butter-chicken', 'Butter chicken', '🍛', 'home', 0, 0, 'indian'],
+    ['grilled-cheese', 'Grilled cheese and tomato soup', '🥪', 'home', 1, 1, 'american'], ['burgers', 'Burgers', '🍔', 'home', 1, 0, 'american'],
+    ['sheet-pan', 'Sheet-pan chicken and vegetables', '🍗', 'home', 0, 0, 'american'], ['chili', 'Beef chili', '🌶️', 'home', 0, 0, 'american'],
+    ['mac', 'Stovetop mac and cheese', '🧀', 'home', 1, 1, 'american'], ['blt', 'BLT sandwiches', '🥓', 'home', 1, 0, 'american'],
+    ['brinner', 'Pancakes and eggs (breakfast for dinner)', '🥞', 'home', 1, 1, 'american'], ['caesar', 'Chicken Caesar salad', '🥗', 'home', 1, 0, 'american'],
+    ['pot-roast', 'Pot roast', '🥩', 'home', 0, 0, 'american'], ['potatoes', 'Baked potatoes with cheese and broccoli', '🥔', 'home', 0, 1, 'american'],
+    ['omelets', 'Veggie omelets', '🍳', 'home', 1, 1, 'american'], ['greek-salad', 'Greek salad with pita', '🥗', 'home', 1, 1, 'med'],
+    ['souvlaki', 'Chicken souvlaki', '🍢', 'home', 0, 0, 'med'], ['shakshuka', 'Shakshuka', '🍳', 'home', 1, 1, 'med'],
+    ['pizza-out', 'Pizza delivery', '🍕', 'out', 0, 1, 'italian'], ['chinese', 'Chinese takeout', '🥡', 'out', 0, 1, 'asian'],
+    ['sushi', 'Sushi', '🍣', 'out', 0, 1, 'asian'], ['thai', 'Thai takeout', '🍜', 'out', 0, 1, 'asian'],
+    ['indian-out', 'Indian takeout', '🍛', 'out', 0, 1, 'indian'], ['taqueria', 'Tacos or burritos from a taqueria', '🌯', 'out', 0, 1, 'mexican'],
+    ['burger-out', 'Burgers and fries', '🍔', 'out', 0, 0, 'american'], ['fried-chicken', 'Fried chicken', '🍗', 'out', 0, 0, 'american'],
+    ['bbq', 'BBQ', '🍖', 'out', 0, 0, 'american'], ['wings', 'Wings', '🍗', 'out', 0, 0, 'american'],
+    ['subs', 'Sub sandwiches', '🥖', 'out', 0, 1, 'american'], ['gyros', 'Gyros or falafel', '🥙', 'out', 0, 1, 'med'],
+    ['pho', 'Pho', '🍜', 'out', 0, 0, 'asian'], ['poke', 'Poke bowls', '🐟', 'out', 0, 0, 'asian'], ['ramen', 'Ramen shop', '🍜', 'out', 0, 0, 'asian']
+  ].map(function (r) { return { id: r[0], name: r[1], emo: r[2], how: r[3], quick: !!r[4], veg: !!r[5], cu: r[6] }; });
+
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function setText(id, t) { var el = $(id); if (el) el.textContent = t; }
+  function readJSON(k, dflt) { try { var v = JSON.parse(localStorage.getItem(k)); return v === null ? dflt : v; } catch (e) { return dflt; } }
+  function writeJSON(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function todayKey() { var d = new Date(); return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function dayLabel(k) { var p = k.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }); }
+
+  /* ---------- saved data ---------- */
+  function loadMine() {
+    var a = readJSON(MINE, []);
+    return (Array.isArray(a) ? a : []).filter(function (x) {
+      return x && typeof x.id === 'string' && /^m\d+$/.test(x.id) && typeof x.name === 'string' && x.name.trim().length > 0 && x.name.length <= 40 &&
+             (x.how === 'home' || x.how === 'out') && typeof x.veg === 'boolean';
+    }).map(function (x) { return { id: x.id, name: x.name.trim(), emo: '⭐', how: x.how, quick: false, veg: x.veg, cu: 'mine' }; });
+  }
+  function loadHidden() { var a = readJSON(HIDE, []); return (Array.isArray(a) ? a : []).filter(function (x) { return typeof x === 'string'; }); }
+  function loadHist() {
+    var a = readJSON(HIST, []);
+    return (Array.isArray(a) ? a : []).filter(function (x) { return x && typeof x.id === 'string' && typeof x.name === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x.d || ''); });
+  }
+
+  /* ---------- filters and pool ---------- */
+  function filters() {
+    var how = document.querySelector('input[name="how"]:checked');
+    return { how: how ? how.value : 'any', cu: Array.prototype.map.call(document.querySelectorAll('input[name="cu"]:checked'), function (e) { return e.value; }),
+             quick: !!($('quick') && $('quick').checked), veg: !!($('veg') && $('veg').checked) };
+  }
+  function matches(x, f) {
+    if (f.how !== 'any' && x.how !== f.how) return false;
+    if (f.cu.length && f.cu.indexOf(x.cu) < 0) return false;
+    if (f.quick && x.how === 'home' && !x.quick) return false;
+    if (f.veg && !x.veg) return false;
+    return true;
+  }
+  function allIdeas() { return IDEAS.concat(loadMine()); }
+  function basePool(f) { var hid = loadHidden(); return allIdeas().filter(function (x) { return hid.indexOf(x.id) < 0 && matches(x, f); }); }
+
+  /* ---------- fair pick: crypto random + rejection sampling (no modulo bias) ---------- */
+  function randIndex(n) {
+    var c = window.crypto;
+    if (c && c.getRandomValues) {
+      var lim = Math.floor(4294967296 / n) * n, buf = new Uint32Array(1);
+      for (var i = 0; i < 64; i++) { c.getRandomValues(buf); if (buf[0] < lim) return buf[0] % n; }
+    }
+    return Math.floor(Math.random() * n);
+  }
+
+  var cur = null, curLink = '', lastId = null, spinning = false;
+  function describe(x) {
+    var bits = [x.how === 'home' ? 'Cook at home' : 'Order in', CU[x.cu]];
+    if (x.how === 'home' && x.quick) bits.push('quick');
+    if (x.veg) bits.push('vegetarian');
+    return bits.join(' · ');
+  }
+  function resetPick() {
+    cur = null; curLink = ''; lastId = null;
+    setText('p-emo', '🍽️'); setText('p-name', 'Press Pick dinner'); setText('p-meta', 'Every matching idea has the same chance.'); setText('p-note', '');
+    ['btn-yes', 'btn-never', 'btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = true; });
+    var sp = $('btn-spin'); if (sp) sp.textContent = '🎲 Pick dinner';
+  }
+  function renderPool() {
+    var f = filters(), p = basePool(f), ul = $('pool');
+    setText('count', p.length ? p.length + (p.length === 1 ? ' idea matches' : ' ideas match') + ' your filters.' : 'No ideas match. Turn a filter off or add your own under My list.');
+    if (ul) {
+      ul.innerHTML = '';
+      p.forEach(function (x) { var li = document.createElement('li'); li.textContent = x.emo + ' ' + x.name; li.setAttribute('data-id', x.id); ul.appendChild(li); });
+    }
+    var sp = $('btn-spin'); if (sp) sp.disabled = !p.length || spinning;
+    var known = allIdeas().map(function (x) { return x.id; });
+    var hid = loadHidden().filter(function (id) { return known.indexOf(id) >= 0; }), hn = $('hidden-note');
+    if (hn) {
+      hn.hidden = !hid.length; hn.textContent = '';
+      if (hid.length) {
+        hn.appendChild(document.createTextNode(hid.length + (hid.length === 1 ? ' idea is' : ' ideas are') + ' hidden. '));
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'btn sm'; b.id = 'btn-unhide'; b.textContent = 'Show them again'; hn.appendChild(b);
       }
     }
-    </script>
+    return p;
+  }
+  function spin() {
+    if (spinning) return;
+    var f = filters(), p = basePool(f), note = '';
+    if (!p.length) return;
+    var recent = loadHist().slice(-RECENT_SKIP).map(function (h) { return h.id; });
+    var fresh = p.filter(function (x) { return recent.indexOf(x.id) < 0; });
+    if (!fresh.length) { fresh = p; note = 'Everything that matches was eaten recently, so repeats are allowed this time.'; }
+    if (fresh.length > 1 && lastId) fresh = fresh.filter(function (x) { return x.id !== lastId; });
+    var choice = fresh[randIndex(fresh.length)], pickLink = link();
+    spinning = true;
+    ['btn-yes', 'btn-never', 'btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = true; });
+    var box = $('pick'), frames = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 10, i = 0;
+    if (box) { box.classList.add('spinning'); box.setAttribute('aria-busy', 'true'); }
+    var sb = $('btn-spin'); if (sb) sb.disabled = true;
+    (function step() {
+      if (i < frames) {
+        var r = fresh[Math.floor(Math.random() * fresh.length)];
+        setText('p-emo', r.emo); setText('p-name', r.name); setText('p-meta', '…');
+        i += 1; setTimeout(step, 70);
+        return;
+      }
+      spinning = false; cur = choice; lastId = choice.id; curLink = pickLink;
+      if (box) { box.classList.remove('spinning'); box.removeAttribute('aria-busy'); }
+      setText('p-emo', choice.emo); setText('p-name', choice.name); setText('p-meta', describe(choice));
+      setText('p-note', (note ? note + ' ' : '') + 'Picked from ' + fresh.length + (fresh.length === 1 ? ' idea.' : ' ideas.'));
+      ['btn-yes', 'btn-never', 'btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = false; });
+      var sp = $('btn-spin'); if (sp) { sp.disabled = false; sp.textContent = '🎲 Spin again'; }
+    })();
+  }
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  /* ---------- my list, hidden, recent ---------- */
+  function renderMine() {
+    var ul = $('mine-list'), m = loadMine();
+    if (!ul) return;
+    ul.innerHTML = '';
+    m.forEach(function (x) {
+      var li = document.createElement('li'), s = document.createElement('span'), b = document.createElement('button');
+      s.textContent = '⭐ ' + x.name + ' (' + (x.how === 'home' ? 'cook' : 'order in') + (x.veg ? ', vegetarian' : '') + ')';
+      b.type = 'button'; b.className = 'btn sm'; b.textContent = 'Remove'; b.setAttribute('data-id', x.id); b.setAttribute('aria-label', 'Remove ' + x.name);
+      li.appendChild(s); li.appendChild(b); ul.appendChild(li);
+    });
+  }
+  function renderHist() {
+    var h = loadHist().slice(-10).reverse(), ul = $('hist');
+    if (ul) {
+      ul.innerHTML = '';
+      h.forEach(function (x) { var li = document.createElement('li'), a = document.createElement('span'), b = document.createElement('span');
+        a.textContent = x.name; b.textContent = dayLabel(x.d); li.appendChild(a); li.appendChild(b); ul.appendChild(li); });
+    }
+    var em = $('hist-empty'); if (em) em.hidden = !!h.length;
+    var cl = $('btn-clear'); if (cl) cl.disabled = !h.length;
+  }
+  function setErr(m) { var e = $('err'); if (e) { e.textContent = m || ''; e.hidden = !m; } }
+  function addMine() {
+    var nm = ($('mine-name') ? $('mine-name').value : '').trim();
+    if (!nm) { setErr('Type a restaurant or dish name.'); return; }
+    if (nm.length > 40) { setErr('Keep the name to 40 characters or fewer.'); return; }
+    var m = readJSON(MINE, []); if (!Array.isArray(m)) m = [];
+    var dup = loadMine().some(function (x) { return x.name.toLowerCase() === nm.toLowerCase(); });
+    if (dup) { setErr('That is already on your list.'); return; }
+    if (loadMine().length >= 100) { setErr('Your list is full (100 ideas). Remove some first.'); return; }
+    m = loadMine().map(function (x) { return { id: x.id, name: x.name, how: x.how, veg: x.veg }; });
+    m.push({ id: 'm' + Date.now() + String(Math.floor(Math.random() * 1000)), name: nm, how: $('mine-how') && $('mine-how').value === 'home' ? 'home' : 'out', veg: !!($('mine-veg') && $('mine-veg').checked) });
+    if (!writeJSON(MINE, m)) { setErr('Could not save. Your browser may be blocking storage.'); return; }
+    setErr(''); if ($('mine-name')) $('mine-name').value = '';
+    showToastNotification('Added ' + nm + ' to your list.');
+    renderMine(); renderPool();
+  }
 
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel" href="https://us-random-meal-decider.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-random-meal-decider.enjoy-onepage.com/sitemap.xml">
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+  /* ---------- toast · copy · share (standard: Web Share -> clipboard -> honest message on failure) ---------- */
+  var toastTimer = null;
+  function showToastNotification(m) {
+    var el = $('global-ux-toast'); if (!el) return;
+    el.textContent = m; el.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please select the text and copy it yourself.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function link() {
+    var f = filters(), q = new URLSearchParams();
+    if (f.how !== 'any') q.set('how', f.how);
+    var cu = f.cu.filter(function (c) { return c !== 'mine'; });
+    if (cu.length) q.set('cu', cu.join(','));
+    if (f.quick) q.set('quick', '1');
+    if (f.veg) q.set('veg', '1');
+    var s = q.toString();
+    return SITE + '/' + (s ? '?' + s : '');
+  }
+  function summary() {
+    if (!cur) return '';
+    return '🍽️ Tonight’s dinner: ' + cur.name + ' ' + (cur.emo === '⭐' ? '' : cur.emo + ' ') + '(' + describe(cur) + ')\n👉 ' + TOOL_NAME + ': ' + (curLink || link());
+  }
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Random Meal & Dinner Decider</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+  /* ---------- events ---------- */
+  on('filters', 'change', function (e) { if (e.target && /^(how|cu)$/.test(e.target.name || '') || (e.target && /^(quick|veg)$/.test(e.target.id))) renderPool(); });
+  on('btn-spin', 'click', spin);
+  on('btn-yes', 'click', function () {
+    if (!cur) return;
+    var h = loadHist(); h.push({ id: cur.id, name: cur.name, d: todayKey() });
+    if (!writeJSON(HIST, h.slice(-50))) { showToastNotification('Could not save. Your browser may be blocking storage.'); return; }
+    var yb = $('btn-yes'); if (yb) yb.disabled = true;
+    showToastNotification('Enjoy your ' + cur.name + '! It will be skipped for the next few picks.');
+    renderHist();
+  });
+  on('btn-never', 'click', function () {
+    if (!cur) return;
+    var hid = loadHidden(); if (hid.indexOf(cur.id) < 0) hid.push(cur.id);
+    if (!writeJSON(HIDE, hid)) { showToastNotification('Could not save. Your browser may be blocking storage.'); return; }
+    showToastNotification(cur.name + ' will not be suggested again.');
+    resetPick();
+    renderPool();
+  });
+  on('hidden-note', 'click', function (e) {
+    if (!e.target || e.target.id !== 'btn-unhide') return;
+    try { localStorage.removeItem(HIDE); } catch (x) { /* storage unavailable */ }
+    showToastNotification('Hidden ideas are back.'); renderPool();
+  });
+  on('btn-mine', 'click', addMine);
+  on('mine-name', 'keydown', function (e) { if (e.key === 'Enter') addMine(); });
+  on('mine-list', 'click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('button[data-id]') : null; if (!b) return;
+    var id = b.getAttribute('data-id');
+    var kept = loadMine().filter(function (x) { return x.id !== id; }).map(function (x) { return { id: x.id, name: x.name, how: x.how, veg: x.veg }; });
+    if (!writeJSON(MINE, kept)) { setErr('Could not save. Your browser may be blocking storage.'); return; }
+    var hid = loadHidden(); if (hid.indexOf(id) >= 0) writeJSON(HIDE, hid.filter(function (h) { return h !== id; }));
+    if (cur && cur.id === id) resetPick();
+    renderMine(); renderPool();
+  });
+  on('btn-clear', 'click', function () {
+    if (!window.confirm('Clear your recent dinners from this browser?')) return;
+    try { localStorage.removeItem(HIST); } catch (e) { /* storage unavailable */ }
+    renderHist(); showToastNotification('Recent dinners cleared.');
+  });
+  on('btn-copy', 'click', function () { if (cur) copyText(summary()); });
+  on('btn-share', 'click', function () {
+    if (!cur) return;
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: curLink || link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Random Meal & Dinner Decider</h1>
-            <p class="text-sm sm:text-base text-slate-600">Can't decide what to eat? Spin the food wheel for quick takeout, homemade dinner, or healthy meal suggestions.</p>
-        </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
-      </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
-
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
-
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
-
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Random Meal & Dinner Decider. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
-
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Random Meal & Dinner Decider - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-random-meal-decider.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
-
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
-
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
-
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+  /* ---------- start: URL filters (?how=home|out&cu=a,b&quick=1&veg=1) ---------- */
+  (function init() {
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    if (q) {
+      var how = q.get('how');
+      if (how === 'home' || how === 'out') { var r = document.querySelector('input[name="how"][value="' + how + '"]'); if (r) r.checked = true; }
+      (q.get('cu') || '').split(',').forEach(function (c) { if (CU[c] && c !== 'mine') { var el = document.querySelector('input[name="cu"][value="' + c + '"]'); if (el) el.checked = true; } });
+      if (q.get('quick') === '1' && $('quick')) $('quick').checked = true;
+      if (q.get('veg') === '1' && $('veg')) $('veg').checked = true;
+    }
+    renderMine(); renderPool(); renderHist();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
