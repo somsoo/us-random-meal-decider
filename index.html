@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel</title>
+<title>What to Eat Tonight? | Random Dinner</title>
 <meta name="description" content="Can't decide what to eat? Get a fair random dinner idea to cook or order, filtered by cuisine, time and vegetarian, with your own list and no repeats.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://us-random-meal-decider.enjoy-onepage.com/">
@@ -12,12 +12,12 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Random Dinner Decider">
-<meta property="og:title" content="What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel">
+<meta property="og:title" content="What to Eat Tonight? | Random Dinner">
 <meta property="og:description" content="Can't decide what to eat? Get a fair random dinner idea to cook or order, filtered by cuisine, time and vegetarian, with your own list and no repeats.">
 <meta property="og:url" content="https://us-random-meal-decider.enjoy-onepage.com/">
 <meta property="og:image" content="https://us-random-meal-decider.enjoy-onepage.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What to Eat Tonight? | Random Dinner &amp; Food Decider Wheel">
+<meta name="twitter:title" content="What to Eat Tonight? | Random Dinner">
 <meta name="twitter:description" content="Can't decide what to eat? Get a fair random dinner idea to cook or order, filtered by cuisine, time and vegetarian, with your own list and no repeats.">
 <meta name="twitter:image" content="https://us-random-meal-decider.enjoy-onepage.com/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Random Dinner Decider RSS" href="https://us-random-meal-decider.enjoy-onepage.com/rss.xml">
@@ -121,6 +121,25 @@ details summary{cursor:pointer;font-weight:600}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2b1a12;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
 .toast.show{opacity:1}
 @media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
 </style>
 </head>
 <body>
